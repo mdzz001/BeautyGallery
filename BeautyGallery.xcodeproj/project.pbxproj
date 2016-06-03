@@ -12,6 +12,8 @@
 		79FF96FB1CFEE27500DF7B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79FF96F91CFEE27500DF7B9D /* Main.storyboard */; };
 		79FF96FD1CFEE27500DF7B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79FF96FC1CFEE27500DF7B9D /* Assets.xcassets */; };
 		79FF97001CFEE27500DF7B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79FF96FE1CFEE27500DF7B9D /* LaunchScreen.storyboard */; };
+		79FF970A1D0059A200DF7B9D /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF97091D0059A200DF7B9D /* ViewControllerExtension.swift */; };
+		79FF970C1D005F3400DF7B9D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF970B1D005F3400DF7B9D /* GalleryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		79FF96FC1CFEE27500DF7B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79FF96FF1CFEE27500DF7B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79FF97011CFEE27500DF7B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79FF97091D0059A200DF7B9D /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerExtension.swift; path = ../ViewControllerExtension.swift; sourceTree = "<group>"; };
+		79FF970B1D005F3400DF7B9D /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				79FF96F51CFEE27500DF7B9D /* AppDelegate.swift */,
 				79FF96F71CFEE27500DF7B9D /* ViewController.swift */,
+				79FF97091D0059A200DF7B9D /* ViewControllerExtension.swift */,
+				79FF970B1D005F3400DF7B9D /* GalleryViewController.swift */,
 				79FF96F91CFEE27500DF7B9D /* Main.storyboard */,
 				79FF96FC1CFEE27500DF7B9D /* Assets.xcassets */,
 				79FF96FE1CFEE27500DF7B9D /* LaunchScreen.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					79FF96F11CFEE27500DF7B9D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FRZGH4W236;
 					};
 				};
 			};
@@ -136,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79FF96F81CFEE27500DF7B9D /* ViewController.swift in Sources */,
+				79FF970C1D005F3400DF7B9D /* GalleryViewController.swift in Sources */,
 				79FF96F61CFEE27500DF7B9D /* AppDelegate.swift in Sources */,
+				79FF970A1D0059A200DF7B9D /* ViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BeautyGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xphwv.BeautyGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BeautyGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xphwv.BeautyGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +301,7 @@
 				79FF97061CFEE27500DF7B9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

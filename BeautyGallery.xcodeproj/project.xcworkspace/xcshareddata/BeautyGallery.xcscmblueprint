@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8F57D56DA0DFB0DFA0F967E2F4F30D20030DCEF7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "709B2DAE8FEB0FB46FBF2916E6F72AAACEA58725" : 0,
+    "8F57D56DA0DFB0DFA0F967E2F4F30D20030DCEF7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "63105018-F32C-4FF8-8C48-4FB598A2B628",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "709B2DAE8FEB0FB46FBF2916E6F72AAACEA58725" : "",
+    "8F57D56DA0DFB0DFA0F967E2F4F30D20030DCEF7" : "BeautyGallery\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BeautyGallery",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BeautyGallery.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xphwv",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "709B2DAE8FEB0FB46FBF2916E6F72AAACEA58725"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xphwv\/BeautyGallery.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F57D56DA0DFB0DFA0F967E2F4F30D20030DCEF7"
+    }
+  ]
+}
