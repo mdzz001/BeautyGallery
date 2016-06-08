@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Social
 
 class GalleryViewController: UIViewController {
-    var imageName:String!
+    var imageName:String?
     
     @IBOutlet weak var image: UIImageView!
     
@@ -17,7 +18,8 @@ class GalleryViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         if imageName != nil {
-            image.image=UIImage(named: imageName);
+            image.image=UIImage(named: imageName!);
+            navigationItem.title=imageName;
         }
     }
     
@@ -25,6 +27,12 @@ class GalleryViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func shareTO(){
+        let controller:SLComposeViewController=SLComposeViewController(forServiceType: SLServiceTypeTencentWeibo)
+        controller.setInitialText("女神画廊分享，http://.....")
+        controller.addImage(image.image);
+        self.presentViewController(controller, animated: true, completion: nil)
+        print("aaaa")
+    }
     
 }
