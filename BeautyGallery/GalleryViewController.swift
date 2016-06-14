@@ -10,16 +10,16 @@ import UIKit
 import Social
 
 class GalleryViewController: UIViewController {
-    var imageName:String?
+    var imageSelected:(Int,String,String)!;
     
     @IBOutlet weak var image: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        if imageName != nil {
-            image.image=UIImage(named: imageName!);
-            navigationItem.title=imageName;
+        if imageSelected != nil {
+            image.image=UIImage(named: imageSelected.2);
+            navigationItem.title=(imageSelected.1);
         }
     }
     

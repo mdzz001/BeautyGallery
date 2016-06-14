@@ -14,14 +14,14 @@ extension ViewController:UIPickerViewDataSource{
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
-        return beauties.count;
+        return beautiesArray.count;
     }
 
 }
 
 extension ViewController:UIPickerViewDelegate{
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
-        return beauties[row];
+        return beautiesArray[row].1;
     }
 
 }
